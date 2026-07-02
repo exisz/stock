@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "symbol": "SPCX",
+  "underlyingPrice": 158.38,
+  "asOf": "2026-07-02T01:36:00+10:00",
+  "marketState": "closed",
+  "expiry": "2028-12-15",
+  "daysToExpiry": 897,
+  "ivLastPct": 67.6,
+  "notes": [
+    "Manual IBKR mobile screenshot extraction while market was closed. Bid/ask/last may be stale.",
+    "Use combo bid/mid/ask from live IBKR Strategy Builder before placing any order.",
+    "All prices are per-share option prices; one option combo controls 100 shares."
+  ],
+  "defaultScan": {
+    "downTarget": 100,
+    "upTarget": 250,
+    "maxDebit": 25,
+    "minTargetProfit": 0,
+    "sellPutStrike": 100,
+    "sellCallStrike": 250
+  },
+  "suggestedStrategies": [
+    {
+      "id": "balanced-130-100-220-250",
+      "label": "Balanced thesis expression",
+      "legs": { "putBuy": 130, "putSell": 100, "callBuy": 220, "callSell": 250 },
+      "limitIdea": "Try 21.00-22.50; do not chase above about 23.00 based on this stale snapshot."
+    },
+    {
+      "id": "limit20-125-100-225-250",
+      "label": "Best $20 limit candidate, but weak reward/risk",
+      "legs": { "putBuy": 125, "putSell": 100, "callBuy": 225, "callSell": 250 },
+      "limitIdea": "Could fill near 19.00-20.00, but max reward/risk is poor unless bought much cheaper."
+    },
+    {
+      "id": "cheap-120-100-230-250",
+      "label": "Low-debit lottery version",
+      "legs": { "putBuy": 120, "putSell": 100, "callBuy": 230, "callSell": 250 },
+      "limitIdea": "Try 14.50-15.50; wide quoted market, do not use market order."
+    },
+    {
+      "id": "original-130-100-200-250",
+      "label": "Original idea, not preferred at snapshot mid",
+      "legs": { "putBuy": 130, "putSell": 100, "callBuy": 200, "callSell": 250 },
+      "limitIdea": "Only interesting if priced much closer to 22 than the snapshot mid around 26.55."
+    }
+  ],
+  "strikes": [
+    { "strike": 95, "call": { "bid": 88.00, "ask": 91.80, "last": 90.90 }, "put": { "bid": 19.60, "ask": 22.70, "last": 20.90 } },
+    { "strike": 100, "call": { "bid": 86.90, "ask": 89.90, "last": 88.00 }, "put": { "bid": 24.30, "ask": 25.20, "last": 25.00 } },
+    { "strike": 105, "call": { "bid": 81.50, "ask": 87.70, "last": 87.80 }, "put": { "bid": 25.90, "ask": 29.70, "last": 24.49 } },
+    { "strike": 110, "call": { "bid": 79.50, "ask": 85.60, "last": 86.22 }, "put": { "bid": 28.30, "ask": 30.90, "last": 29.51 } },
+    { "strike": 115, "call": { "bid": 79.50, "ask": 83.60, "last": 82.40 }, "put": { "bid": 30.20, "ask": 36.10, "last": 29.31 } },
+    { "strike": 120, "call": { "bid": 78.00, "ask": 81.60, "last": 79.70 }, "put": { "bid": 33.10, "ask": 37.30, "last": 34.50 } },
+    { "strike": 125, "call": { "bid": 74.60, "ask": 80.70, "last": 87.66 }, "put": { "bid": 36.60, "ask": 39.60, "last": 37.60 } },
+    { "strike": 130, "call": { "bid": 73.80, "ask": 77.90, "last": 77.00 }, "put": { "bid": 38.70, "ask": 41.80, "last": 40.90 } },
+    { "strike": 135, "call": { "bid": 71.50, "ask": 76.50, "last": 74.00 }, "put": { "bid": 42.50, "ask": 44.00, "last": 43.00 } },
+    { "strike": 140, "call": { "bid": 69.80, "ask": 75.40, "last": 77.00 }, "put": { "bid": 43.60, "ask": 48.70, "last": 46.10 } },
+    { "strike": 145, "call": { "bid": 69.10, "ask": 73.10, "last": 72.45 }, "put": { "bid": 45.40, "ask": 51.70, "last": 45.14 } },
+    { "strike": 150, "call": { "bid": 66.60, "ask": 72.20, "last": 69.10 }, "put": { "bid": 50.80, "ask": 54.50, "last": 52.00 } },
+    { "strike": 155, "call": { "bid": 66.00, "ask": 69.60, "last": 67.79 }, "put": { "bid": 52.70, "ask": 57.60, "last": 55.50 } },
+    { "strike": 160, "call": { "bid": 65.10, "ask": 67.80, "last": 65.60 }, "put": { "bid": 57.60, "ask": 59.80, "last": 59.00 } },
+    { "strike": 200, "call": { "bid": 53.40, "ask": 57.40, "last": 56.50 }, "put": { "bid": 82.50, "ask": 86.80, "last": 85.50 } },
+    { "strike": 205, "call": { "bid": 52.40, "ask": 55.90, "last": 55.00 }, "put": { "bid": 87.50, "ask": 91.80, "last": 83.76 } },
+    { "strike": 210, "call": { "bid": 51.60, "ask": 54.20, "last": 52.57 }, "put": { "bid": 89.00, "ask": 95.70, "last": 87.14 } },
+    { "strike": 215, "call": { "bid": 49.70, "ask": 54.00, "last": 59.32 }, "put": { "bid": 92.30, "ask": 100.70, "last": 90.62 } },
+    { "strike": 220, "call": { "bid": 49.40, "ask": 54.00, "last": 52.50 }, "put": { "bid": 96.00, "ask": 105.00, "last": 94.26 } },
+    { "strike": 225, "call": { "bid": 48.70, "ask": 51.80, "last": 49.30 }, "put": { "bid": 100.00, "ask": 106.90, "last": 97.90 } },
+    { "strike": 230, "call": { "bid": 45.60, "ask": 51.80, "last": 55.98 }, "put": { "bid": 104.00, "ask": 111.70, "last": 101.55 } },
+    { "strike": 235, "call": { "bid": 44.80, "ask": 51.00, "last": 54.87 }, "put": { "bid": 108.00, "ask": 114.60, "last": 105.20 } },
+    { "strike": 240, "call": { "bid": 44.80, "ask": 49.20, "last": 53.76 }, "put": { "bid": 111.00, "ask": 119.60, "last": 108.86 } },
+    { "strike": 245, "call": { "bid": 43.20, "ask": 49.20, "last": 52.76 }, "put": { "bid": 115.00, "ask": 122.70, "last": 112.64 } },
+    { "strike": 250, "call": { "bid": 42.40, "ask": 46.30, "last": 48.00 }, "put": { "bid": 119.00, "ask": 127.70, "last": 116.43 } }
+  ]
+}
