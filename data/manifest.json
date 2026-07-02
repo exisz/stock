@@ -1,0 +1,11 @@
+{
+  "datasets": [
+    {
+      "id": "spcx-dec2028-20260702-closed",
+      "label": "SPCX Dec 15 2028 — IBKR closed snapshot 2026-07-02",
+      "file": "data/spcx-dec2028-20260702-closed.json",
+      "symbol": "SPCX",
+      "expiry": "2028-12-15"
+    }
+  ]
+}
